@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>landing Page</title>
+</head>
+<body>
+
+    <div class="container0">
+        <div class="split left">
+            <h1>Divakar</h1>
+            <a href="#" class="land-btn">Buy Later</a>
+        </div>
+
+        <div class="split right">
+            <h1>My Website</h1>
+            <a href="./index.html" class="land-btn">Take me there!</a>
+        </div>
+    </div>
+
+
+    <script>
+                
+        const left = document.querySelector('.left');
+        const right = document.querySelector('.right');
+        const containerland = document.querySelector('.container0');
+
+        left.addEventListener('mouseenter', () => containerland.classList.add('hover-left'));
+        left.addEventListener('mouseleave', () => containerland.classList.remove('hover-left'));
+
+
+        right.addEventListener('mouseenter', () => containerland.classList.add('hover-right'));
+        right.addEventListener('mouseleave', () => containerland.classList.remove('hover-right'));
+    </script>
+
+    
+</body>
+</html>
